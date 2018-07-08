@@ -15,10 +15,12 @@ and then clone it to your development environment.
 ### Navigating the Filesystem
 
 * Get an idea of where you are in the operating system. Use the `pwd` command to find your "path to working directory"--your current location in the filesystem of your devbox. *Paste the output of the `pwd` command here:* 
+user@869e0139263b:/projects$ pwd
 /projects
 
 * Discover more about this filesystem. Use `ls` (the "list" command)to see what is in this directory. *What directories and files do you see when you run `ls`?*
-italianjedi.github.io   wats3010-adv-markup    wats3010-css             wats3010-hello-world           wats3010-product-page
+user@869e0139263b:/projects$ ls
+italianjedi.github.io   wats3010-adv-markup    wats3010-css             wats3010-hello-world           wats3010-product-page  wats3020-sandwich-machine
 wats1030-intro-to-unix  wats3010-basic-markup  wats3010-embedded-media  wats3010-intro-to-bootstrap-4  wats3020-mad-libs
 
 
@@ -73,13 +75,17 @@ bin  boot  dev  etc  home  lib  lib64  media  mnt  open-jdk-source-file-location
 
 
 * A Unix filesystem has a few special shortcuts to refer to specific locations. `/` indicates the *root* of the filesystem, meaning the top-most directory in the filesystem hierarchy. Use the `cd` ("change directory") command to move to the root directory. (Hint: Use `man` to look up the `cd` command if you have any issues) *Then run `pwd` and paste the output here:*
-/
+user@869e0139263b:/projects$ ls /
+bin  boot  dev  etc  home  lib  lib64  media  mnt  open-jdk-source-file-location  opt  proc  projects  root  run  sbin  srv  sys  tmp  usr  var
 
 * Another special shortcut in Unix is the `~` location. This indicates the *user root* directory, meaning the top-most directory in the hierarchy that comes below your user account. Use `cd` to move to `~`. *Run `pwd` and paste the response here:*
+user@869e0139263b:/projects$ cd ~
+user@869e0139263b:~$ pwd
 /home/user
 
 
 * Change directory into the `challenge_files` directory. Use `ls` to find only the files with a `.demo` pattern. *How many files do you find?*
+user@869e0139263b:/projects$ cd wats1030-intro-to-unix/challenge_files/
 user@f97ce9d74f7c:/projects/wats1030-intro-to-unix/challenge_files$ ls *.demo
 2015_special_stuff.demo  cloaked-wookie.demo  scooter-double-mamba.demo
 
@@ -97,6 +103,15 @@ displayed the last couple commands
 
 * Run the `history` command. *What do you see?*
 It brought up the last couple commands I ran, which I ended up starting over half way through this project.
+user@869e0139263b:/projects/wats1030-intro-to-unix/challenge_files$ history
+    1  cd wats1030-intro-to-unix/challenge_files/
+    2  ls *.demo
+    3  cd up
+    4  cd ..
+    5  cd wats1030-intro-to-unix/challenge_files/
+    6  pwd
+    7  ls history
+    8  history
 
 ### Observing the System
 
@@ -113,6 +128,7 @@ user@f97ce9d74f7c:/projects/wats1030-intro-to-unix$ uptime
  06:42:39 up 2 days, 22:36,  0 users,  load average: 0.01, 0.03, 0.05
 
 * Run `ps aux` and review the results. (Hint: Use `man` to learn more about the `ps` command and options.) *How do you interpret what you see here?*
+It looks like active processes, according to man
 user@f97ce9d74f7c:/projects/wats1030-intro-to-unix$ ps aux
 USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
 user         1  0.0  0.0   4500   644 ?        Ss   05:18   0:00 /bin/sh -c tail -f /dev/null
@@ -133,6 +149,7 @@ user       898  0.0  0.0  21084  3400 pts/4    Ss   06:31   0:00 /bin/bash
 user       999  0.0  0.0  36076  1644 pts/4    R+   06:48   0:00 ps aux
 
 * Run `top` and review the results. (Hint: You may need to use `ctrl-c` to get out of this app.) *How do you interpret what you see here?*
+Real time view of the running system, according to man
 top - 06:52:27 up 2 days, 22:46,  0 users,  load average: 0.01, 0.02, 0.05
 Tasks:  16 total,   1 running,  15 sleeping,   0 stopped,   0 zombie
 %Cpu(s):  0.0 us,  0.1 sy,  0.0 ni, 99.8 id,  0.0 wa,  0.0 hi,  0.0 si,  0.1 st
@@ -164,7 +181,8 @@ Last updated: 01-15-2015
 
 
 * Use the `find` command to search for files more effectively. Search the sub-directories under `challenge_files` to find the location of the file named `modi_laboriosam.txt`. *Where is that file located?*
-user@f97ce9d74f7c:/projects/wats1030-intro-to-unix/challenge_files$ 
+user@869e0139263b:/projects/wats1030-intro-to-unix/challenge_files$ find -name modi_laboriosam.txt
+./tmp/modi_laboriosam.txt
 
 * Use the `grep` command to search for text within a file. Use `grep` on all the `.user` files in `challenge_files` to find which files contain "WA" (the abbreviation for Washington state). *How many files did you find?*
 user@0e0d300301f0:/projects/wats1030-intro-to-unix/challenge_files$ grep "WA" *.user
