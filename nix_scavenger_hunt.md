@@ -37,14 +37,36 @@ drwxr-xr-x 11 user root 4.0K May 18 18:41 wats3010-intro-to-bootstrap-4
 drwxr-xr-x  6 user root 4.0K Jun 13 16:50 wats3010-product-page
 drwxr-xr-x  6 user root  101 Jun 27 17:34 wats3020-mad-libs
 
+//I think you may be asking what happens when we use -alh separately. Here is what I got then:
+user@b69b56666bd5:/projects$ ls -a
+.   italianjedi.github.io   wats3010-adv-markup    wats3010-css             wats3010-hello-world           wats3010-product-page  wats3020-sandwich-machine
+..  wats1030-intro-to-unix  wats3010-basic-markup  wats3010-embedded-media  wats3010-intro-to-bootstrap-4  wats3020-mad-libs
+
+user@b69b56666bd5:/projects$ ls -l
+total 8
+drwxr-xr-x  4 user root  100 Jun 28 18:45 italianjedi.github.io
+drwxr-xr-x  5 user root  178 Jul  4 09:17 wats1030-intro-to-unix
+drwxr-xr-x  4 user root  253 Apr 27 02:41 wats3010-adv-markup
+drwxr-xr-x  4 user root  192 Apr 10 16:28 wats3010-basic-markup
+drwxr-xr-x  5 user root  130 Apr 19 16:57 wats3010-css
+drwxr-xr-x  7 user root  134 May  5 18:46 wats3010-embedded-media
+drwxr-xr-x  4 user root   98 Apr  5 16:58 wats3010-hello-world
+drwxr-xr-x 11 user root 4096 May 18 18:41 wats3010-intro-to-bootstrap-4
+drwxr-xr-x  6 user root 4096 Jun 13 16:50 wats3010-product-page
+drwxr-xr-x  6 user root  101 Jun 27 17:34 wats3020-mad-libs
+drwxr-xr-x  7 user root  115 Jul  5 08:32 wats3020-sandwich-machine
+
+user@b69b56666bd5:/projects$ ls -h
+italianjedi.github.io   wats3010-adv-markup    wats3010-css             wats3010-hello-world           wats3010-product-page  wats3020-sandwich-machine
+wats1030-intro-to-unix  wats3010-basic-markup  wats3010-embedded-media  wats3010-intro-to-bootstrap-4  wats3020-mad-libs
+
 * The `man` ("manual") command tells you more about how any given command works. (*WARNING:* CodeAnywhere does not support the man command. You can click the following link to complete this task: http://man.he.net/). Run `man` to see instructions about how to use `man`. Then use `man` to learn what the `a`, `l`, and `h` options mean when used with the `ls` command. *Write down what those options do?*
--a
-Show all (including hidden)
+I can't get this to work on Powershell or my command line so I found these by Googling it.
+-a:Show all (including hidden)
+-l:Long listing format
+-h:Human-readable
 
--l
-Long listing format
-
-
+They all look to display the same material but in different ways.
 
 * Commands can also take *arguments*, which are usually the names of files or locations that you want the command to work with. Try running `ls /` to see what files are in the *root* directory of the filesystem. *What files and directories do you see listed?*
 bin  boot  dev  etc  home  lib  lib64  media  mnt  open-jdk-source-file-location  opt  proc  projects  root  run  sbin  srv  sys  tmp  usr  var
@@ -142,8 +164,7 @@ Last updated: 01-15-2015
 
 
 * Use the `find` command to search for files more effectively. Search the sub-directories under `challenge_files` to find the location of the file named `modi_laboriosam.txt`. *Where is that file located?*
-user@f97ce9d74f7c:/projects/wats1030-intro-to-unix/challenge_files$ find -name modi_laboriosam.txt
-./tmp/modi_laboriosam.txt
+user@f97ce9d74f7c:/projects/wats1030-intro-to-unix/challenge_files$ 
 
 * Use the `grep` command to search for text within a file. Use `grep` on all the `.user` files in `challenge_files` to find which files contain "WA" (the abbreviation for Washington state). *How many files did you find?*
 user@0e0d300301f0:/projects/wats1030-intro-to-unix/challenge_files$ grep "WA" *.user
