@@ -19,9 +19,9 @@ and then clone it to your development environment.
 `/projects`
 
 * Discover more about this filesystem. Use `ls` (the "list" command)to see what is in this directory. *What directories and files do you see when you run `ls`?*
-user@869e0139263b:/projects$ ls
+`user@869e0139263b:/projects$ ls
 italianjedi.github.io   wats3010-adv-markup    wats3010-css             wats3010-hello-world           wats3010-product-page  wats3020-sandwich-machine
-wats1030-intro-to-unix  wats3010-basic-markup  wats3010-embedded-media  wats3010-intro-to-bootstrap-4  wats3020-mad-libs
+wats1030-intro-to-unix  wats3010-basic-markup  wats3010-embedded-media  wats3010-intro-to-bootstrap-4  wats3020-mad-libs`
 
 
 * You can use *options* to modify how a command runs. Try using `ls -alh` to see the contents of your current directory. *How are the results different when you use the `-alh` options?*
