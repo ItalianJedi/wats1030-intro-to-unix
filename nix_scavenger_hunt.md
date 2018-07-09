@@ -15,7 +15,7 @@ and then clone it to your development environment.
 ### Navigating the Filesystem
 
 * Get an idea of where you are in the operating system. Use the `pwd` command to find your "path to working directory"--your current location in the filesystem of your devbox. *Paste the output of the `pwd` command here:* 
-`user@869e0139263b:/projects$ pwd
+`*user@869e0139263b:/projects$ pwd
 */projects`
 
 * Discover more about this filesystem. Use `ls` (the "list" command)to see what is in this directory. *What directories and files do you see when you run `ls`?*
