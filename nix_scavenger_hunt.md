@@ -25,19 +25,19 @@ wats1030-intro-to-unix  wats3010-basic-markup  wats3010-embedded-media  wats3010
 
 
 * You can use *options* to modify how a command runs. Try using `ls -alh` to see the contents of your current directory. *How are the results different when you use the `-alh` options?*
-total 8.0K
-drwxr-xr-x 12 user root  291 Jul  4 09:17 .
-drwxr-xr-x 22 root root  295 Jul  4 09:13 ..
-drwxr-xr-x  4 user root  100 Jun 28 18:45 italianjedi.github.io
-drwxr-xr-x  5 user root  178 Jul  4 09:17 wats1030-intro-to-unix
-drwxr-xr-x  4 user root  253 Apr 27 02:41 wats3010-adv-markup
-drwxr-xr-x  4 user root  192 Apr 10 16:28 wats3010-basic-markup
-drwxr-xr-x  5 user root  130 Apr 19 16:57 wats3010-css
-drwxr-xr-x  7 user root  134 May  5 18:46 wats3010-embedded-media
-drwxr-xr-x  4 user root   98 Apr  5 16:58 wats3010-hello-world
-drwxr-xr-x 11 user root 4.0K May 18 18:41 wats3010-intro-to-bootstrap-4
-drwxr-xr-x  6 user root 4.0K Jun 13 16:50 wats3010-product-page
-drwxr-xr-x  6 user root  101 Jun 27 17:34 wats3020-mad-libs
+`*total 8.0K
+*drwxr-xr-x 12 user root  291 Jul  4 09:17 .
+*drwxr-xr-x 22 root root  295 Jul  4 09:13 ..
+*drwxr-xr-x  4 user root  100 Jun 28 18:45 italianjedi.github.io
+*drwxr-xr-x  5 user root  178 Jul  4 09:17 wats1030-intro-to-unix
+*drwxr-xr-x  4 user root  253 Apr 27 02:41 wats3010-adv-markup
+*drwxr-xr-x  4 user root  192 Apr 10 16:28 wats3010-basic-markup
+*drwxr-xr-x  5 user root  130 Apr 19 16:57 wats3010-css
+*drwxr-xr-x  7 user root  134 May  5 18:46 wats3010-embedded-media
+*drwxr-xr-x  4 user root   98 Apr  5 16:58 wats3010-hello-world
+*drwxr-xr-x 11 user root 4.0K May 18 18:41 wats3010-intro-to-bootstrap-4
+*drwxr-xr-x  6 user root 4.0K Jun 13 16:50 wats3010-product-page
+*drwxr-xr-x  6 user root  101 Jun 27 17:34 wats3020-mad-libs`
 
 //I think you may be asking what happens when we use -alh separately. Here is what I got then:
 user@b69b56666bd5:/projects$ ls -a
